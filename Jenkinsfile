@@ -12,7 +12,7 @@ pipeline {
        stage('Deploy') {
            steps {
                script {
-                    sh 'docker run -p 3000:3000 node-app'
+                    sh 'docker run -d -p 3000:3000 node-app'
                }
            }
        }
